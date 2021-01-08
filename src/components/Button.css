@@ -1,0 +1,27 @@
+
+.btn-secondary{
+    -webkit-transition: background-color 0.15s;
+    -moz-transition: background-color 0.15s;
+    -o-transition: background-color 0.15s;
+    transition: background-color 0.15s;
+    border: 1px solid gray;
+    border-bottom: 2px solid gray;
+    border-radius: 3px;
+    color: gray;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 8px 10px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    width: 152px;
+    background: transparent;
+}
+
+
+
+.btn-secondary:hover {
+    color: #444444;
+    border-color: #444444;
+}

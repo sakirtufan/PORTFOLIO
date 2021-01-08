@@ -1,0 +1,33 @@
+.btn-github {
+  -webkit-transition: background-color 0.15s;
+  -moz-transition: background-color 0.15s;
+  -o-transition: background-color 0.15s;
+  transition: background-color 0.15s;
+  border: 1px solid gray;
+  border-bottom: 2px solid gray;
+  border-radius: 3px;
+  color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 8px 10px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  background: transparent;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-size: 1.5rem;
+}
+.btn-github:hover {
+  
+  color: #444444;
+  border-color: #444444;
+}
+
+p {
+  margin-left: 1rem;
+}
