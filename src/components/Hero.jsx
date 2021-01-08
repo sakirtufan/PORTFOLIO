@@ -2,19 +2,10 @@ import React from "react";
 import renkli from '../images/renkli.jpeg'
 import Button from './Button'
 import ButtonGithub from "./ButtonGithub";
-
-
 import './Hero.css';
 
+const Hero = ({buttons}) => {
 
-const Hero = () => {
-
-  const buttons = [
-    {name:'Portfolio', href: '/portfolio'},
-    {name:'Work Experience', href: '/work'},
-    {name:'Skills & Education', href: '/skills'},
-    {name:'About', href: '/about'}
-  ]
   
   return (
     <div id="hero" className="gray-gradient">      

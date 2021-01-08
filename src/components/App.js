@@ -9,14 +9,15 @@ import About from './About';
 import Portfolio from './Portfolio';
 import Work from './Work';
 import Skills from './Skills';
+import Home from './Home';
 
 function App() {
   return (
-    <Router>     
-
+    <Router>            
+      <Home/>
       <Switch>
         <Route exact path="/">
-          <Hero/>
+          <Home/>
         </Route>
         <Route path="/about">
           <About />

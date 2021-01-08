@@ -23,6 +23,7 @@
 }
 .content{
   font-size: 4.2rem;
+  margin-bottom: 5rem;
 }
 
 img{
@@ -36,5 +37,4 @@ img:hover{
 .hero-buttons{
   display:flex;
   justify-content:space-between;
-  margin-top:5rem;
 }
