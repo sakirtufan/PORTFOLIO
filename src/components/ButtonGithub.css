@@ -1,8 +1,7 @@
 .btn-github {
   transition: background-color 0.15s;
   border: 1px solid gray;  
-  border-radius: 3px;
-  color:#333;
+  border-radius: 3px;  
   display: flex;
   justify-content: center;
   align-items: center;   
@@ -10,16 +9,11 @@
   text-transform: uppercase;
   background: #fff;  
   right: 10px;
-  bottom: 10px;
-  font-size: 1.5rem;
+  bottom: 10px;  
   z-index: 2;
   border-radius:3px;
 }
-.btn-github:hover {  
-  color: #444444;
-  border-color: #444444;
-}
 
-p {
+.github p {
   margin-left: 1rem;
 }

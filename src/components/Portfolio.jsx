@@ -1,10 +1,16 @@
-import React from 'react'
-import './Portfolio.css'
+import React, { Component } from "react";
+import BookList from "./BookList";
+import BookContextProvider from "../contexts/BookContext";
+import ThemeContextProvider from "../contexts/ThemeContext";
 
-export default function Portfolio() {
-  return (
-    <div id="portfolio" className="gray-gradient">
-      Portfolio
-    </div>
-  )
+export default class Portfolio extends Component {
+  render() {
+    return (
+      <ThemeContextProvider>
+        <BookContextProvider>
+          <BookList />
+        </BookContextProvider>
+      </ThemeContextProvider>
+    );
+  }
 }

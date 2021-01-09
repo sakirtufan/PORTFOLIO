@@ -5,19 +5,18 @@
 }
 .Nav { 
   position: fixed; 
-  z-index: 2;
-  
+  z-index: 2;  
 }
 
-ul{
+#navbar-div nav ul{
   opacity: 0;
   width: 100%;
   margin: 0;
   list-style-type: none;   
   transition: all .5s;  
-  background:rgb(14, 13, 13);
+  background:#fffefe;
 }
 
-nav .ul{
+#navbar-div nav .ul{
   opacity: 1;  
 }

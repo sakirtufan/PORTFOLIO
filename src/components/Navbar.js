@@ -31,7 +31,7 @@ export default class Navbar extends Component {
     console.log(this.props);
     return (
       <div>
-        <div>
+        <div id="navbar-div">
           <nav>
             <ul className={`Nav ${this.state.nav && 'ul' }`}>
               <div className='hero-buttons'>
