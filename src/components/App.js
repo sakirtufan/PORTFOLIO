@@ -1,4 +1,5 @@
 import React from 'react'
+import './App.css'
 import {
   BrowserRouter as Router,
   Switch,
@@ -20,6 +21,7 @@ function App() {
         <Route exact path="/">
           <Home/>
           <Portfolio/>
+          <Work/>
         </Route>
         <Route path="/about">
           <About />
