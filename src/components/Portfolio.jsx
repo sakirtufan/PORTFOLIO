@@ -1,8 +1,9 @@
 import React from 'react'
+import './Portfolio.css'
 
 export default function Portfolio() {
   return (
-    <div>
+    <div id="portfolio" className="gray-gradient">
       Portfolio
     </div>
   )

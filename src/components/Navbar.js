@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './Navbar.css'
+import './Hero.css'
 import Button from './Button';
 
 export default class Navbar extends Component {
@@ -11,7 +12,7 @@ export default class Navbar extends Component {
     window.addEventListener("scroll", this.handleScroll);
   }
   componentWillUnmount() {
-    window.removeEventListener('scroll');
+    window.removeEventListener('scroll',()=>{});
   }
   handleScroll = () => {
     if (window.pageYOffset > 140) {
@@ -32,8 +33,7 @@ export default class Navbar extends Component {
       <div>
         <div>
           <nav>
-            <ul className={`Nav ${this.state.nav && 'ul'}`}>
-
+            <ul className={`Nav ${this.state.nav && 'ul' }`}>
               <div className='hero-buttons'>
                 {
                   this.props.buttons.map(button => {

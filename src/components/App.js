@@ -1,5 +1,5 @@
+import React from 'react'
 import './App.css';
-import Hero from './Hero';
 import {
   BrowserRouter as Router,
   Switch,
@@ -13,11 +13,14 @@ import Home from './Home';
 
 function App() {
   return (
+    <React.Fragment>
+    
     <Router>            
-      <Home/>
+      
       <Switch>
         <Route exact path="/">
           <Home/>
+          <Portfolio/>
         </Route>
         <Route path="/about">
           <About />
@@ -34,6 +37,8 @@ function App() {
       </Switch>
 
     </Router>
+    
+    </React.Fragment>
   );
 }
 

@@ -1,8 +1,5 @@
 
-.btn-secondary{
-    -webkit-transition: background-color 0.15s;
-    -moz-transition: background-color 0.15s;
-    -o-transition: background-color 0.15s;
+.btn-secondary{   
     transition: background-color 0.15s;
     border: 1px solid gray;
     border-bottom: 2px solid gray;
@@ -16,10 +13,8 @@
     text-align: center;
     text-transform: uppercase;
     width: 152px;
-    background: transparent;
+    background: #fff;
 }
-
-
 
 .btn-secondary:hover {
     color: #444444;
