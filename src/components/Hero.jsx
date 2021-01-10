@@ -5,6 +5,7 @@ import ButtonGithub from "./ButtonGithub";
 import "./Hero.css";
 
 const Hero = ({ buttons }) => {
+  
   return (
     <div id="hero" className="gray-gradient">
       <div className="container">

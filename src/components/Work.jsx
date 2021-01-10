@@ -51,7 +51,7 @@ export default function Work() {
 
   return (
     <div>
-      <div className="container mb-5">
+      <div className="container mb-5 py-5">
         <h2 className="text-center text-uppercase font-weight-bold my-5">
           Work Experience
         </h2>

@@ -10,6 +10,7 @@ import Portfolio from './Portfolio';
 import Work from './Work';
 import Skills from './Skills';
 import Home from './Home';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
           <Home/>
           <Portfolio/>
           <Work/>
+          <Skills/>
+          <About/>
+          <Footer/>
         </Route>
         <Route path="/about">
           <About />
