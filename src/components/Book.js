@@ -15,11 +15,13 @@ class Book extends React.Component {
         return (
           <div className="col-lg-4 col-sm-6 mb-4">
             <div className="portfolio-item">
-              <a className="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+              <a className="portfolio-link" target="_blank" rel="noopener noreferrer"data-toggle="modal" href={this.props.book.imageURL}>
                 <div className="portfolio-hover" style={{ background: theme.hover }}>
-                  <div className="portfolio-hover-content"><i className="fas fa-plus fa-3x"></i></div>
+                  <div className="portfolio-hover-content">
+                    <i className="fas fa-plus fa-3x"></i>
+                  </div>
                 </div>
-                <img className="img-fluid" src={this.props.book.imageURL} alt="" />
+                <img className="img-fluid" src={this.props.book.imageURL} alt="imageError" />
               </a>
               <div className="portfolio-caption">
                 <div className="portfolio-caption-heading">{this.props.book.title}</div>
