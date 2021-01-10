@@ -15,7 +15,7 @@ export default class Navbar extends Component {
     window.removeEventListener('scroll', () => { });
   }
   handleScroll = () => {
-    if (window.pageYOffset > 140) {
+    if (window.pageYOffset > 200) {
       if (!this.state.nav) {
         this.setState({ nav: true });
       }

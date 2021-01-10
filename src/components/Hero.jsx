@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { ButtonContext } from '../contexts/ButtonContext'
 import renkli from "../images/renkli.jpeg";
 import Button from "./Button";
@@ -7,13 +7,36 @@ import "./Hero.css";
 
 
 const Hero = () => {
+  
+  const [hero, setHero] = useState(false)
+
+  const handleScroll = () => {
+    if (window.pageYOffset > 200 ) {
+      if (!hero) {
+        setHero(true);
+      }
+    } else {
+      if (!hero) {
+        setHero(false);
+      }
+    }
+
+  }
+
+  useEffect(() =>{
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener('scroll', () => { });
+    }
+  },[])
+  
 
   const buttons = useContext(ButtonContext);  
   
   return (
     <div id="hero" className="gray-gradient">
       <div className="container">
-        <div className="hero-container">
+        <div className={`hero-container ${hero && 'heroul'}`}>
           <div className="foto">
             <img
               className="hero-img"
@@ -39,6 +62,7 @@ const Hero = () => {
               } 
             </div>
           </div>
+          
         </div>
       </div>
       <ButtonGithub />

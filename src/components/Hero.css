@@ -16,8 +16,14 @@
   padding: 4rem 1.5rem;
   display:flex;
   justify-content: space-around;
-  margin-top: 14rem;
+  margin-top: 8rem;
   border-radius: 3px;  
+  z-index: 2;
+  transition: all 1.5s;
+}
+
+.heroul{
+  opacity: 0;
 }
 
 .containerUl{
@@ -45,4 +51,24 @@
 .hero-buttons{
   display:flex;
   justify-content:space-around;
+}
+
+
+
+.Nav { 
+  position: fixed; 
+  z-index: 2;  
+}
+
+#navbar-div nav ul{
+  opacity: 0;
+  width: 100%;
+  margin: 0;
+  list-style-type: none;   
+  transition: all .5s;  
+  background:#fffefe;
+}
+
+#navbar-div nav .ul{
+  opacity: 1;  
 }
