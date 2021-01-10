@@ -31,10 +31,7 @@ class Book extends React.Component {
       }}
 
       </ThemeContext.Consumer>
-
-
     );
-
   }
 }
 
