@@ -11,12 +11,11 @@ import Work from './Work';
 import Skills from './Skills';
 import Home from './Home';
 
+
 function App() {
   return (
     <React.Fragment>
-
       <Router>
-
         <Switch>
           <Route exact path="/">
             <Home />
@@ -34,7 +33,6 @@ function App() {
             <Work />
           </Route>
         </Switch>
-
       </Router>
 
     </React.Fragment>

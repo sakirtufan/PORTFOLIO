@@ -59,22 +59,22 @@ export default function Work() {
           {works.map((work) => {
             return (
               <div className="col-md-6 p-3">
-                <div class="card">
-                  <div class="card-header">
+                <div className="card">
+                  <div className="card-header">
                     <h4>{work.title}</h4>
-                    <p class="text-muted">{work.descriptionTitle}</p>
+                    <p className="text-muted">{work.descriptionTitle}</p>
                   </div>
-                  <div class="card-body d-flex p-2 justify-content-around align-items-center">
+                  <div className="card-body d-flex p-2 justify-content-around align-items-center">
                     <a
                       href={work.url}
-                      class="card-title px-1 msifir"
+                      className="card-title px-1 msifir"
                     >
-                      <i class="fas fa-map-marker-alt"></i>
+                      <i className="fas fa-map-marker-alt"></i>
                       {work.location}
                     </a>
                     <p className="msifir">{work.date}</p>
                   </div>
-                  <div class="card-footer text-muted">
+                  <div className="card-footer text-muted">
                       {work.description}
                   </div>
                 </div>

@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ButtonContext } from '../contexts/ButtonContext'
 import renkli from "../images/renkli.jpeg";
 import Button from "./Button";
 import ButtonGithub from "./ButtonGithub";
 import "./Hero.css";
 
-const Hero = ({ buttons }) => {
+
+const Hero = () => {
+
+  const buttons = useContext(ButtonContext);  
   
   return (
     <div id="hero" className="gray-gradient">
@@ -30,7 +34,7 @@ const Hero = ({ buttons }) => {
               {
                buttons.filter(button => 
                 button.name !== 'Home').map(filteredButton =>  (                  
-                    <Button button={filteredButton}/>                  
+                    <Button button={filteredButton} key={filteredButton.name}/>                  
                 ))
               } 
             </div>

@@ -12,7 +12,7 @@ export default class Navbar extends Component {
     window.addEventListener("scroll", this.handleScroll);
   }
   componentWillUnmount() {
-    window.removeEventListener('scroll',()=>{});
+    window.removeEventListener('scroll', () => { });
   }
   handleScroll = () => {
     if (window.pageYOffset > 140) {
@@ -28,17 +28,19 @@ export default class Navbar extends Component {
   }
 
   render() {
-    console.log(this.props);
+
     return (
+
+
       <div>
         <div id="navbar-div">
           <nav>
-            <ul className={`Nav ${this.state.nav && 'ul' }`}>
+            <ul className={`Nav ${this.state.nav && 'ul'}`}>
               <div className='hero-buttons'>
                 {
                   this.props.buttons.map(button => {
                     return (
-                      <Button button={button} />
+                      <Button button={button} key={button.name} />
                     )
                   })
                 }

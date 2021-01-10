@@ -6,3 +6,6 @@ footer{
 ul{
   list-style: none;
 }
+.text-red{
+  color: rgb(214, 95, 95);
+}
