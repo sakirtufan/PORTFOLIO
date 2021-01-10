@@ -27,9 +27,12 @@ const Hero = ({ buttons }) => {
               </p>
             </div>
             <div className="hero-buttons">
-              {buttons.map((button) => {
-                return <Button button={button} />;
-              })}
+              {
+               buttons.filter(button => 
+                button.name !== 'Home').map(filteredButton =>  (                  
+                    <Button button={filteredButton}/>                  
+                ))
+              } 
             </div>
           </div>
         </div>
