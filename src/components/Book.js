@@ -15,7 +15,7 @@ class Book extends React.Component {
         return (
           <div className="col-lg-4 col-sm-6 mb-4">
             <div className="portfolio-item">
-              <a className="portfolio-link" target="_blank" rel="noopener noreferrer"data-toggle="modal" href={this.props.book.imageURL}>
+              <a className="portfolio-link" target="_blank" rel="noopener noreferrer" data-toggle="modal" href={this.props.book.imageURL}>
                 <div className="portfolio-hover" style={{ background: theme.hover }}>
                   <div className="portfolio-hover-content">
                     <i className="fas fa-plus fa-3x"></i>
@@ -26,6 +26,11 @@ class Book extends React.Component {
               <div className="portfolio-caption">
                 <div className="portfolio-caption-heading">{this.props.book.title}</div>
                 <div className="portfolio-caption-subheading text-muted">{this.props.book.author}</div>
+                <div className="portfolio-caption-project-link">
+                  <a target="_blank" rel="noopener noreferrer" href={this.props.book.codeURL}>
+                    <button className="btn btn-outline-danger">Project Code</button>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
