@@ -11,7 +11,7 @@ import { ButtonContext } from "../contexts/ButtonContext";
 export default function Home() {
   const buttons = [
     { name: "Home", href: "/home" },
-    { name: "Portfolio", href: "/portfolio" },
+    { name: "Projectfolio", href: "/portfolio" },
     { name: "Work Experience", href: "/work" },
     { name: "Skills & Education", href: "/skills" },
     { name: "About", href: "/about" },
